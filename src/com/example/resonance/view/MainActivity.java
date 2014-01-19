@@ -1,4 +1,8 @@
-package com.example.resonance;
+package com.example.resonance.view;
+
+import com.example.resonance.R;
+import com.example.resonance.R.layout;
+import com.example.resonance.R.menu;
 
 import android.os.Bundle;
 import android.app.Activity;
