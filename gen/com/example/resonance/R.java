@@ -10,6 +10,11 @@ package com.example.resonance;
 public final class R {
     public static final class attr {
     }
+    public static final class color {
+        public static final int qqblue=0x7f040001;
+        public static final int transparent=0x7f040002;
+        public static final int window_bg=0x7f040000;
+    }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
 
@@ -17,25 +22,74 @@ public final class R {
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f050000;
+        public static final int activity_vertical_margin=0x7f050001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int bar=0x7f020000;
+        public static final int bottom_bar=0x7f020001;
+        public static final int ic_launcher=0x7f020002;
+        public static final int main_btn=0x7f020003;
+        public static final int main_btn_bg=0x7f020004;
+        public static final int tab_bg=0x7f020005;
+        public static final int tab_friends_normal=0x7f020006;
+        public static final int tab_friends_pressed=0x7f020007;
+        public static final int tab_homepage_normal=0x7f020008;
+        public static final int tab_homepage_pressed=0x7f020009;
+        public static final int tab_message_normal=0x7f02000a;
+        public static final int tab_message_pressed=0x7f02000b;
+        public static final int tab_search_normal=0x7f02000c;
+        public static final int tab_search_pressed=0x7f02000d;
     }
     public static final class id {
-        public static final int action_settings=0x7f080000;
+        public static final int action_settings=0x7f090005;
+        public static final int main_friends=0x7f090002;
+        public static final int main_homepage=0x7f090004;
+        public static final int main_message=0x7f090001;
+        public static final int main_radiogroup=0x7f090000;
+        public static final int main_search=0x7f090003;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
     }
     public static final class menu {
-        public static final int main=0x7f070000;
+        public static final int main=0x7f080000;
     }
     public static final class string {
-        public static final int action_settings=0x7f050001;
-        public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050002;
+        public static final int action_settings=0x7f060001;
+        public static final int activity_addfriend=0x7f060011;
+        public static final int activity_chat=0x7f060016;
+        public static final int activity_chatwitha=0x7f060018;
+        public static final int activity_chatwithq=0x7f060017;
+        public static final int activity_fitsuccess=0x7f06000d;
+        /**  各个activity的名称 
+         */
+        public static final int activity_friends=0x7f060003;
+        public static final int activity_friendsinfo=0x7f060010;
+        public static final int activity_groupchat=0x7f06000f;
+        public static final int activity_groupchatrooms=0x7f06000e;
+        public static final int activity_homepage=0x7f060006;
+        public static final int activity_improveinfo=0x7f060009;
+        public static final int activity_login=0x7f060007;
+        public static final int activity_message=0x7f060004;
+        public static final int activity_modifyinfo=0x7f06000a;
+        public static final int activity_modifyinterest=0x7f06000b;
+        public static final int activity_questionbyalp=0x7f060012;
+        public static final int activity_questionbycat=0x7f060013;
+        public static final int activity_register=0x7f060008;
+        public static final int activity_search=0x7f060005;
+        public static final int activity_strategy=0x7f060014;
+        public static final int activity_strategyinfo=0x7f060015;
+        public static final int activity_testheart=0x7f06000c;
+        public static final int app_name=0x7f060000;
+        public static final int hello_world=0x7f060002;
+        public static final int main_friends=0x7f06001a;
+        public static final int main_homepage=0x7f06001c;
+        /**  activity_main layout 
+         */
+        public static final int main_message=0x7f060019;
+        public static final int main_search=0x7f06001b;
+        public static final int main_tab_now=0x7f06001d;
     }
     public static final class style {
         /** 
@@ -59,10 +113,13 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f070000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
+        public static final int AppTheme=0x7f070001;
+        /**  the style of radioButton in the activity_main  
+         */
+        public static final int main_btn_style=0x7f070002;
     }
 }

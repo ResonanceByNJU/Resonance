@@ -4,5 +4,36 @@
     <string name="app_name">Resonance</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-
+    
+    <!-- 各个activity的名称 -->
+    <string name="activity_friends">FriendsActivity</string>
+    <string name="activity_message">MessageActivity</string>
+    <string name="activity_search">SearchActivity</string>
+    <string name="activity_homepage">HomePageActivity</string>
+    <string name="activity_login">LoginActivity</string>
+    <string name="activity_register">RegisterActivity</string>
+    <string name="activity_improveinfo">ImproveInfoActivity</string>
+    <string name="activity_modifyinfo">ModifyInfoActivity</string>
+    <string name="activity_modifyinterest">ModifyInterestsActivity</string>
+    <string name="activity_testheart">TestHeartActivity</string>
+    <string name="activity_fitsuccess">FitSuccessActivity</string>
+    <string name="activity_groupchatrooms">GroupChatRoomsActivity</string>
+    <string name="activity_groupchat">GroupChatActivity</string>
+    <string name="activity_friendsinfo">FriendsInfoActivity</string>
+    <string name="activity_addfriend">AddFriendActivity</string>
+    <string name="activity_questionbyalp">QuestionsByAlpActivity</string>
+    <string name="activity_questionbycat">QuestionByCatActivity</string>
+    <string name="activity_strategy">StrategyActivity</string>
+    <string name="activity_strategyinfo">StrategyInfoActivity</string>
+    <string name="activity_chat">ChatActivity</string>
+    <string name="activity_chatwithq">ChatWithQActivity</string>
+    <string name="activity_chatwitha">ChatWithAActivity</string>
+    
+    
+    <!-- activity_main layout -->
+    <string name="main_message">消息</string>
+    <string name="main_friends">好友</string>
+    <string name="main_search">发现</string>
+    <string name="main_homepage">主页</string>
+    <string name="main_tab_now">正在使用的Tab</string>
 </resources>

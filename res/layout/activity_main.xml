@@ -1,18 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?>  
-<TabHost xmlns:android="http://schemas.android.com/apk/res/android"  
-    android:id="@android:id/tabhost"  
-    android:layout_width="match_parent"  
-    android:layout_height="match_parent" >  
-    <RelativeLayout android:orientation="vertical"    
-        android:layout_width="match_parent"   
-        android:layout_height="match_parent">  
-        <FrameLayout android:id="@android:id/tabcontent"    
-                android:layout_width="match_parent"   
-                android:layout_height="match_parent" />  
-            <TabWidget android:id="@android:id/tabs"  
-                android:layout_width="match_parent"  
-                android:layout_height="wrap_content"   
-                android:layout_alignParentBottom="true">  
-            </TabWidget>  
-    </RelativeLayout>  
-</TabHost> 
+<?xml version="1.0" encoding="utf-8"?>
+
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@android:id/tabhost"
+
+    >
+
+<LinearLayout android:orientation="vertical"
+			  android:layout_width="fill_parent"
+    	      android:layout_height="fill_parent"
+		 	>
+<TabWidget android:id="@android:id/tabs"
+ 		android:layout_width="fill_parent"
+       android:layout_height="wrap_content" 
+       android:visibility="gone"/>
+
+<FrameLayout android:id="@android:id/tabcontent"
+		android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"/>
+
+
+<RadioGroup android:id="@+id/main_radiogroup"
+ 			android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:background="@drawable/bar"
+    		android:layout_gravity="bottom"
+    		android:orientation="horizontal"
+    		android:gravity="center_vertical"
+    		>
+   
+   
+   <RadioButton android:id="@+id/main_message"
+   				android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:text="@string/main_message"
+    		    style="@style/main_btn_style"
+    		    android:drawableTop="@drawable/tab_message_normal"/>
+   
+    <RadioButton android:id="@+id/main_friends"
+   				android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:text="@string/main_friends"
+    		    style="@style/main_btn_style"
+    		   android:drawableTop="@drawable/tab_friends_normal"/> 
+    		   
+    		   		
+   <RadioButton android:id="@+id/main_search"
+   				android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:text="@string/main_search"
+    		    style="@style/main_btn_style"
+    		   android:drawableTop="@drawable/tab_search_normal"/>
+    		   
+    		   
+   <RadioButton android:id="@+id/main_homepage"
+   				android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:text="@string/main_homepage"
+    		    style="@style/main_btn_style"
+    		   android:drawableTop="@drawable/tab_homepage_normal"/> 		    		
+    		
+</RadioGroup>
+
+</LinearLayout>
+</TabHost>

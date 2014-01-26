@@ -22,6 +22,76 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <activity android:name="com.example.resonance.view.friends.FriendsActivity"
+            android:label="@string/activity_friends">
+        </activity>
+        
+        <activity android:name="com.example.resonance.view.message.MessageActivity"
+            android:label="@string/activity_message">
+        </activity>
+        
+        <activity android:name="com.example.resonance.view.search.SearchActivity"
+            android:label="@string/activity_search">
+        </activity>
+        
+        <activity android:name="com.example.resonance.view.homepage.HomePageActivity"
+            android:label="@string/activity_homepage">
+        </activity>
+        <activity android:name="com.example.resonance.view.login.LoginActivity"
+            android:label="@string/activity_login">
+        </activity>
+        <activity android:name="com.example.resonance.view.login.RegisterActivity"
+            android:label="@string/activity_register">
+        </activity>
+        <activity android:name="com.example.resonance.view.login.ImproveInfoActivity"
+            android:label="@string/activity_improveinfo">
+        </activity>
+        <activity android:name="com.example.resonance.view.homepage.ModifyInfoActivity"
+            android:label="@string/activity_modifyinfo">
+        </activity>
+        <activity android:name="com.example.resonance.view.homepage.ModifyInterestsActivity"
+            android:label="@string/activity_modifyinterest">
+        </activity>
+        <activity android:name="com.example.resonance.view.login.TestHeartActivity"
+            android:label="@string/activity_testheart">
+        </activity>
+        <activity android:name="com.example.resonance.view.login.FitSuccessActivity"
+            android:label="@string/activity_fitsuccess">
+        </activity>
+        <activity android:name="com.example.resonance.view.friends.AddFriendActivity"
+            android:label="@string/activity_addfriend">
+        </activity>
+        <activity android:name="com.example.resonance.view.friends.FriendsInfoActivity"
+            android:label="@string/activity_friendsinfo">
+        </activity>
+        <activity android:name="com.example.resonance.view.search.GroupChatRoomsActivity"
+            android:label="@string/activity_groupchatrooms">
+        </activity>
+        <activity android:name="com.example.resonance.view.search.GroupChatActivity"
+            android:label="@string/activity_groupchat">
+        </activity>
+        <activity android:name="com.example.resonance.view.search.QuestionsByAlpActivity"
+            android:label="@string/activity_questionbyalp">
+        </activity>
+        <activity android:name="com.example.resonance.view.search.QuestionByCatActivity"
+            android:label="@string/activity_questionbycat">
+        </activity>
+        <activity android:name="com.example.resonance.view.search.StrategyActivity"
+            android:label="@string/activity_strategy">
+        </activity>
+        <activity android:name="com.example.resonance.view.search.StrategyInfoActivity"
+            android:label="@string/activity_strategyinfo">
+        </activity>
+        <activity android:name="com.example.resonance.view.message.ChatActivity"
+            android:label="@string/activity_chat">
+        </activity>
+        <activity android:name="com.example.resonance.view.message.ChatWithQActivity"
+            android:label="@string/activity_chatwithq">
+        </activity>
+        <activity android:name="com.example.resonance.view.message.ChatWithAActivity"
+            android:label="@string/activity_chatwitha">
+        </activity>
     </application>
 
 </manifest>
