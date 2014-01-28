@@ -8,6 +8,7 @@ import com.example.resonance.view.search.SearchActivity;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.LocalActivityManager;
 import android.app.TabActivity;
 import android.content.Intent;
 import android.support.v4.view.ViewPager;
@@ -26,7 +27,7 @@ import android.widget.TabHost.TabSpec;
  * @author never
  * @date 2014-1-25
  */
-public class MainActivity extends TabActivity{
+public class MainActivity extends Activity{
     private static final String TAB_MESSAGE = "消息";
 	private static final String TAB_FRIENDS = "好友";
 	private static final String TAB_SEARCH = "发现";
@@ -48,7 +49,9 @@ public class MainActivity extends TabActivity{
  	 * 初始化界面
  	 */
  	private void initView() {
-        tabHost = this.getTabHost();
+ 		tabHost = (TabHost) findViewById(android.R.id.tabhost);
+ 		tabHost.setup();
+     //   tabHost = this.getTabHost();
         
         TabSpec spec_message = tabHost.newTabSpec(TAB_MESSAGE).setIndicator(TAB_MESSAGE).setContent(new Intent(this,MessageActivity.class));
  	    TabSpec spec_friends = tabHost.newTabSpec(TAB_FRIENDS).setIndicator(TAB_FRIENDS).setContent(new Intent(this,FriendsActivity.class));
