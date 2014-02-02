@@ -26,31 +26,32 @@ public final class R {
         public static final int activity_vertical_margin=0x7f050001;
     }
     public static final class drawable {
-        public static final int bar=0x7f020000;
-        public static final int bottom_bar=0x7f020001;
-        public static final int ic_launcher=0x7f020002;
-        public static final int main_btn=0x7f020003;
-        public static final int main_btn_bg=0x7f020004;
-        public static final int tab_bg=0x7f020005;
-        public static final int tab_friends_normal=0x7f020006;
-        public static final int tab_friends_pressed=0x7f020007;
-        public static final int tab_homepage_normal=0x7f020008;
-        public static final int tab_homepage_pressed=0x7f020009;
-        public static final int tab_message_normal=0x7f02000a;
-        public static final int tab_message_pressed=0x7f02000b;
-        public static final int tab_search_normal=0x7f02000c;
-        public static final int tab_search_pressed=0x7f02000d;
+        public static final int home_btn_bg=0x7f020000;
+        public static final int ic_launcher=0x7f020001;
+        public static final int icon_friends_nor=0x7f020002;
+        public static final int icon_friends_pre=0x7f020003;
+        public static final int icon_homepage_nor=0x7f020004;
+        public static final int icon_homepage_pre=0x7f020005;
+        public static final int icon_message_nor=0x7f020006;
+        public static final int icon_message_pre=0x7f020007;
+        public static final int icon_search_nor=0x7f020008;
+        public static final int icon_search_pre=0x7f020009;
+        public static final int maintab_toolbar_bg=0x7f02000a;
+        public static final int selector_tab_background=0x7f02000b;
+        public static final int tab_friends_btn=0x7f02000c;
+        public static final int tab_homepage_btn=0x7f02000d;
+        public static final int tab_message_btn=0x7f02000e;
+        public static final int tab_search_btn=0x7f02000f;
     }
     public static final class id {
-        public static final int action_settings=0x7f090005;
-        public static final int main_friends=0x7f090002;
-        public static final int main_homepage=0x7f090004;
-        public static final int main_message=0x7f090001;
-        public static final int main_radiogroup=0x7f090000;
-        public static final int main_search=0x7f090003;
+        public static final int action_settings=0x7f090003;
+        public static final int imageview=0x7f090001;
+        public static final int realtabcontent=0x7f090000;
+        public static final int textview=0x7f090002;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
+        public static final int tab_item_view=0x7f030001;
     }
     public static final class menu {
         public static final int main=0x7f080000;
@@ -118,8 +119,5 @@ public final class R {
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f070001;
-        /**  the style of radioButton in the activity_main  
-         */
-        public static final int main_btn_style=0x7f070002;
     }
 }
