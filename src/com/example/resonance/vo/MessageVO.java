@@ -7,6 +7,14 @@ public class MessageVO {
 	private String sendTime;
 	private String message;
 	
+	public MessageVO(long sendID, long receiveID, String sendTime,
+			String message) {
+		super();
+		this.sendID = sendID;
+		this.receiveID = receiveID;
+		this.sendTime = sendTime;
+		this.message = message;
+	}
 	public long getSendID() {
 		return sendID;
 	}

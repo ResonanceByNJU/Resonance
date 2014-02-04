@@ -6,6 +6,15 @@ public class FriendVO {
 	private String username;
 	private String makeFriendContent;
 	
+	public FriendVO(String beginWord, String imagePath, String username,
+			String makeFriendContent) {
+		super();
+		this.beginWord = beginWord;
+		this.imagePath = imagePath;
+		this.username = username;
+		this.makeFriendContent = makeFriendContent;
+	}
+	
 	public String getBeginWord() {
 		return beginWord;
 	}

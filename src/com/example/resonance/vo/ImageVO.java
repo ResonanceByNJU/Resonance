@@ -6,6 +6,16 @@ public class ImageVO {
 	private long receiveID;
 	private String sendTime;
 	private String imagePath;
+	
+	public ImageVO(long sendID, long receiveID, String sendTime,
+			String imagePath) {
+		super();
+		this.sendID = sendID;
+		this.receiveID = receiveID;
+		this.sendTime = sendTime;
+		this.imagePath = imagePath;
+	}
+	
 	public long getSendID() {
 		return sendID;
 	}

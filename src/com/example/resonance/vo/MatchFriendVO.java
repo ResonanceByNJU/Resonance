@@ -5,6 +5,12 @@ public class MatchFriendVO {
 	private String friendName;
 	private double heartRate;
 	
+	public MatchFriendVO(String imagePath, String friendName, double heartRate) {
+		super();
+		this.imagePath = imagePath;
+		this.friendName = friendName;
+		this.heartRate = heartRate;
+	}
 	public String getImagePath() {
 		return imagePath;
 	}

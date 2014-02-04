@@ -11,8 +11,27 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
+        /**  白色 
+         */
+        public static final int black=0x7f040004;
+        /**  黑色 
+         */
+        public static final int blue=0x7f040005;
+        /**  好友列表的分割线颜色 
+         */
+        public static final int friends_list_content=0x7f040009;
+        /**  主页面顶部的标题字体颜色 
+         */
+        public static final int friends_listview_divider=0x7f040008;
+        /**  主页面tab中的文字颜色 
+         */
+        public static final int head_textcolor=0x7f040007;
         public static final int qqblue=0x7f040001;
+        /**  淡蓝色 
+         */
+        public static final int tab_color=0x7f040006;
         public static final int transparent=0x7f040002;
+        public static final int white=0x7f040003;
         public static final int window_bg=0x7f040000;
     }
     public static final class dimen {
@@ -24,34 +43,92 @@ public final class R {
          */
         public static final int activity_horizontal_margin=0x7f050000;
         public static final int activity_vertical_margin=0x7f050001;
+        /**  好友列表每一项的最小高度 
+         */
+        public static final int friends_item_image_width=0x7f05000c;
+        /**  好友页面搜索框距离顶部的距离 
+         */
+        public static final int friends_item_minheight=0x7f05000b;
+        /**  好友页面搜索框中的字体大小 
+         */
+        public static final int friends_listview_divider=0x7f050006;
+        /**  好友列表滑动时滑到的字母大小 
+         */
+        public static final int friends_search_edit_margin=0x7f05000a;
+        /**  好友列表右侧字母表宽度 
+         */
+        public static final int friends_search_fail_textsize=0x7f050008;
+        /**  未搜索到好友时的提示字体大小 
+         */
+        public static final int friends_search_lettersize=0x7f050009;
+        /**  主页面顶部标题的高度 
+         */
+        public static final int friends_search_textsize=0x7f050005;
+        /**  好友列表分割线的高度 
+         */
+        public static final int friends_sidebar_width=0x7f050007;
+        /**  主页面顶部标题字体距离顶部和底部的距离 
+         */
+        public static final int head_height=0x7f050004;
+        /**  主页面顶部标题字体大小 
+         */
+        public static final int head_padding=0x7f050003;
+        public static final int head_textsize=0x7f050002;
     }
     public static final class drawable {
-        public static final int home_btn_bg=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
-        public static final int icon_friends_nor=0x7f020002;
-        public static final int icon_friends_pre=0x7f020003;
-        public static final int icon_homepage_nor=0x7f020004;
-        public static final int icon_homepage_pre=0x7f020005;
-        public static final int icon_message_nor=0x7f020006;
-        public static final int icon_message_pre=0x7f020007;
-        public static final int icon_search_nor=0x7f020008;
-        public static final int icon_search_pre=0x7f020009;
-        public static final int maintab_toolbar_bg=0x7f02000a;
-        public static final int selector_tab_background=0x7f02000b;
-        public static final int tab_friends_btn=0x7f02000c;
-        public static final int tab_homepage_btn=0x7f02000d;
-        public static final int tab_message_btn=0x7f02000e;
-        public static final int tab_search_btn=0x7f02000f;
+        public static final int friends_add=0x7f020000;
+        public static final int friends_add_btn=0x7f020001;
+        public static final int friends_add_pre=0x7f020002;
+        public static final int friends_search=0x7f020003;
+        public static final int friends_search_edit_pre=0x7f020004;
+        public static final int friends_toast_letter_bg=0x7f020005;
+        public static final int home_btn_bg=0x7f020006;
+        public static final int ic_launcher=0x7f020007;
+        public static final int icon_friends_nor=0x7f020008;
+        public static final int icon_friends_pre=0x7f020009;
+        public static final int icon_homepage_nor=0x7f02000a;
+        public static final int icon_homepage_pre=0x7f02000b;
+        public static final int icon_message_nor=0x7f02000c;
+        public static final int icon_message_pre=0x7f02000d;
+        public static final int icon_search_nor=0x7f02000e;
+        public static final int icon_search_pre=0x7f02000f;
+        public static final int listitem_bg=0x7f020010;
+        public static final int listitem_down=0x7f020011;
+        public static final int listitem_up=0x7f020012;
+        public static final int maintab_toolbar_bg=0x7f020013;
+        public static final int selector_tab_background=0x7f020014;
+        public static final int tab_friends_btn=0x7f020015;
+        public static final int tab_homepage_btn=0x7f020016;
+        public static final int tab_message_btn=0x7f020017;
+        public static final int tab_search_btn=0x7f020018;
+        public static final int tab_textcolor=0x7f020019;
+        public static final int usericon=0x7f02001a;
     }
     public static final class id {
-        public static final int action_settings=0x7f090003;
-        public static final int imageview=0x7f090001;
+        public static final int action_settings=0x7f090010;
+        public static final int friends_add=0x7f090003;
+        public static final int friends_alphabetscrollbar=0x7f090008;
+        public static final int friends_letter=0x7f090009;
+        public static final int friends_letter_notice=0x7f090006;
+        public static final int friends_list_content=0x7f09000c;
+        public static final int friends_list_imageview=0x7f09000a;
+        public static final int friends_list_name=0x7f09000b;
+        public static final int friends_listvew=0x7f090005;
+        public static final int friends_search_edit=0x7f090004;
+        public static final int friends_search_fail_textview=0x7f090007;
+        public static final int friends_top_layout=0x7f090001;
+        public static final int friends_top_textview=0x7f090002;
+        public static final int head_textView=0x7f09000d;
+        public static final int imageview=0x7f09000e;
         public static final int realtabcontent=0x7f090000;
-        public static final int textview=0x7f090002;
+        public static final int textview=0x7f09000f;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int tab_item_view=0x7f030001;
+        public static final int friends=0x7f030001;
+        public static final int friends_list_item=0x7f030002;
+        public static final int head=0x7f030003;
+        public static final int tab_item_view=0x7f030004;
     }
     public static final class menu {
         public static final int main=0x7f080000;
@@ -82,7 +159,15 @@ public final class R {
         public static final int activity_strategy=0x7f060014;
         public static final int activity_strategyinfo=0x7f060015;
         public static final int activity_testheart=0x7f06000c;
+        /**  friends layout 
+         */
+        public static final int add_friends=0x7f06001e;
         public static final int app_name=0x7f060000;
+        /**  friends_list_item layout 
+         */
+        public static final int friends_list_image=0x7f060021;
+        public static final int friends_search=0x7f06001f;
+        public static final int friends_search_fail=0x7f060020;
         public static final int hello_world=0x7f060002;
         public static final int main_friends=0x7f06001a;
         public static final int main_homepage=0x7f06001c;
@@ -119,5 +204,9 @@ public final class R {
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f070001;
+        public static final int friendsListCatalog=0x7f070003;
+        /**  联系分组样式 
+         */
+        public static final int friendsListItem=0x7f070002;
     }
 }

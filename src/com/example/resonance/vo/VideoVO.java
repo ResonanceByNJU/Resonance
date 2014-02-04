@@ -5,6 +5,15 @@ public class VideoVO {
 	private long receiveID;
 	private String sendtime;
 	private String videoPath;
+	
+	public VideoVO(long sendID, long receiveID, String sendtime,
+			String videoPath) {
+		super();
+		this.sendID = sendID;
+		this.receiveID = receiveID;
+		this.sendtime = sendtime;
+		this.videoPath = videoPath;
+	}
 	public long getSendID() {
 		return sendID;
 	}

@@ -6,6 +6,15 @@ public class ChangePersonalInformationVO {
 	private String sex;
 	private String makeFriendContent;
 	
+	public ChangePersonalInformationVO(String username, String imagePath,
+			String sex, String makeFriendContent) {
+		super();
+		this.username = username;
+		this.imagePath = imagePath;
+		this.sex = sex;
+		this.makeFriendContent = makeFriendContent;
+	}
+	
 	public String getUsername() {
 		return username;
 	}

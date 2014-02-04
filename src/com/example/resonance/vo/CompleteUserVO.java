@@ -8,6 +8,14 @@ public class CompleteUserVO {
 	private ArrayList<String> interestList;
 	private String makeFriendContent;
 	
+	public CompleteUserVO(String sex, ArrayList<String> interestList,
+			String makeFriendContent) {
+		super();
+		this.sex = sex;
+		this.interestList = interestList;
+		this.makeFriendContent = makeFriendContent;
+	}
+	
 	public String getSex() {
 		return sex;
 	}

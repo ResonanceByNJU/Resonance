@@ -36,4 +36,12 @@
     <string name="main_search">发现</string>
     <string name="main_homepage">主页</string>
     <string name="main_tab_now">正在使用的Tab</string>
+    
+    <!-- friends layout -->
+    <string name="add_friends">添加好友</string>
+    <string name="friends_search">搜索联系人</string>
+    <string name="friends_search_fail">暂无匹配联系人</string>
+    
+    <!-- friends_list_item layout -->
+    <string name="friends_list_image">头像</string>
 </resources>

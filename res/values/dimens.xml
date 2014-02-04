@@ -3,5 +3,17 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-
+    <dimen name="head_textsize">28sp</dimen>   <!-- 主页面顶部标题字体大小 -->
+	<dimen name="head_padding">10dip</dimen>   <!-- 主页面顶部标题字体距离顶部和底部的距离 -->
+	<dimen name="head_height">50dip</dimen>   <!-- 主页面顶部标题的高度 -->
+	
+	<dimen name="friends_search_textsize">15sp</dimen>   <!-- 好友页面搜索框中的字体大小 -->
+	<dimen name="friends_listview_divider">2dip</dimen>   <!-- 好友列表分割线的高度 -->
+    <dimen name="friends_sidebar_width">30dip</dimen>   <!-- 好友列表右侧字母表宽度 -->
+    <dimen name="friends_search_fail_textsize">28sp</dimen>   <!-- 未搜索到好友时的提示字体大小 -->
+    <dimen name="friends_search_lettersize">50sp</dimen>     <!-- 好友列表滑动时滑到的字母大小 -->
+    <dimen name="friends_search_edit_margin">5dip</dimen>    <!-- 好友页面搜索框距离顶部的距离 -->
+    
+    <dimen name="friends_item_minheight">50dip</dimen>    <!-- 好友列表每一项的最小高度 -->
+    <dimen name="friends_item_image_width">48dip</dimen>  <!-- 好友列表每一项头像宽度 -->
 </resources>

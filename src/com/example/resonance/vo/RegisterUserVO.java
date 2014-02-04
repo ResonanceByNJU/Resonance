@@ -6,6 +6,14 @@ public class RegisterUserVO {
 	private String comfirmPassword;
 	private String imagePath;
 	
+	public RegisterUserVO(String username, String password,
+			String comfirmPassword, String imagePath) {
+		super();
+		this.username = username;
+		this.password = password;
+		this.comfirmPassword = comfirmPassword;
+		this.imagePath = imagePath;
+	}
 	public String getUsername() {
 		return username;
 	}

@@ -8,6 +8,16 @@ public class AudioVO {
 	private String audioPath;
 	private int lastTime;
 	
+	public AudioVO(long sendID, long receiveID, String sendTime,
+			String audioPath, int lastTime) {
+		super();
+		this.sendID = sendID;
+		this.receiveID = receiveID;
+		this.sendTime = sendTime;
+		this.audioPath = audioPath;
+		this.lastTime = lastTime;
+	}
+	
 	public long getSendID() {
 		return sendID;
 	}

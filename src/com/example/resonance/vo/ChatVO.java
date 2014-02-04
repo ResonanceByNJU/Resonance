@@ -11,6 +11,21 @@ public class ChatVO {
 	private ArrayList<ImageVO> imageList;
 	private ArrayList<AudioVO> audioList;
 	private ArrayList<VideoVO> videoList;
+	
+	public ChatVO(String chatFriendName, String friendPicturePath,
+			String latestTime, String latestWord,
+			ArrayList<MessageVO> messageList, ArrayList<ImageVO> imageList,
+			ArrayList<AudioVO> audioList, ArrayList<VideoVO> videoList) {
+		super();
+		this.chatFriendName = chatFriendName;
+		this.friendPicturePath = friendPicturePath;
+		this.latestTime = latestTime;
+		this.latestWord = latestWord;
+		this.messageList = messageList;
+		this.imageList = imageList;
+		this.audioList = audioList;
+		this.videoList = videoList;
+	}
 	public String getChatFriendName() {
 		return chatFriendName;
 	}

@@ -6,14 +6,11 @@ import com.example.resonance.view.homepage.HomePagePage;
 import com.example.resonance.view.message.MessagePage;
 import com.example.resonance.view.search.SearchPage;
 
-import android.graphics.Color;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.TabHost.TabSpec;
@@ -77,7 +74,6 @@ public class MainActivity extends FragmentActivity{
 			//…Ë÷√Tab∞¥≈•µƒ±≥æ∞
 			mTabHost.getTabWidget().getChildAt(i).setBackgroundResource(R.drawable.selector_tab_background);
 		}
- 	    
  	    
  	}
  	

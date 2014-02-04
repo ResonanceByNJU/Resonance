@@ -4,6 +4,13 @@ public class ProblemBeforeChatVO {
 	private String username;
 	private String problem;
 	private String answer;
+	
+	public ProblemBeforeChatVO(String username, String problem, String answer) {
+		super();
+		this.username = username;
+		this.problem = problem;
+		this.answer = answer;
+	}
 	public String getUsername() {
 		return username;
 	}
