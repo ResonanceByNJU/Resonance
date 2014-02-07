@@ -7,10 +7,11 @@ import java.util.List;
 import java.util.Map;
 
 import com.example.resonance.R;
+import com.example.resonance.adapter.FilterFriendsAdapter;
 import com.example.resonance.adapter.FriendsAdapter;
 import com.example.resonance.stub.FellowService_Stub;
 import com.example.resonance.utils.PinyinComparator;
-import com.example.resonance.utils.PrintHelper;
+import com.example.resonance.utils.PinyinUtils;
 import com.example.resonance.view.widget.AlphabetScrollBar;
 import com.example.resonance.view.widget.AlphabetScrollBar.OnTouchingLetterChangedListener;
 import com.example.resonance.vo.FriendVO;
@@ -42,8 +43,13 @@ import android.widget.TextView;
 public class FriendsPage extends Fragment{
 	private FellowService_Stub fellowService = new FellowService_Stub();
 	private List<Map<String, Object>> friends_mapList = null;
+	//所有好友列表.
+	private ArrayList<FriendVO> friendList = null;
 	
-	private FriendsAdapter adapter = null;
+	//好友列表的适配器
+	private FriendsAdapter friendsAdapter = null;
+	//搜索好友成功之后列表的适配器
+	private FilterFriendsAdapter filterFriendsAdapter = null;
     //好友列表页面
 	private View friendsView = null;
 	//添加好友按钮
@@ -65,12 +71,11 @@ public class FriendsPage extends Fragment{
     
 	/* (non-Javadoc)
 	 * Title: onCreateView
-	 * @see android.support.v4.app.Fragment#onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)
+	 * @see android.support.v4.app.Fragment#onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle).
 	 */
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		
 		friendsView = inflater.inflate(R.layout.friends, container, false);
 		
@@ -102,14 +107,26 @@ public class FriendsPage extends Fragment{
 		
 		//初始化好友列表
 		friends_listView = (ListView) friendsView.findViewById(R.id.friends_listvew);
-		friends_listView.setAdapter(adapter);
+		friends_listView.setAdapter(friendsAdapter);
 		friends_listView.setOnItemClickListener(new OnItemClickListener() {
 
+			@SuppressWarnings("unchecked")
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
 					long arg3) {
 				// TODO Auto-generated method stub
-				new AlertDialog.Builder(getActivity()).setMessage("click").create().show();
+				//获取点击选择的好友.
+				Map<String, Object> map = (Map<String, Object>) arg0.getItemAtPosition(arg2);
+				FriendVO friendVO = new FriendVO((String)map.get("beginword"), (Integer)map.get("icon") + "", 
+						(String)map.get("name"), (String)map.get("content"));
+				
+				//跳转到好友信息页面.
+				Intent intent = new Intent(getActivity(),FriendsInfoActivity.class);
+				Bundle bundle = new Bundle();
+				bundle.putSerializable("friendVO", friendVO);
+				intent.putExtras(bundle);
+				startActivity(intent);
+				
 			}
 		});
 		
@@ -123,9 +140,25 @@ public class FriendsPage extends Fragment{
 			@Override
 			public void onTextChanged(CharSequence s, int start, int before, int count) {
 				if(s.toString().trim().equals("")) {
+				
+					friends_listView.setAdapter(friendsAdapter);
+					
 					friends_alphabetScrollBar.setVisibility(View.VISIBLE);
 					friends_top_layout.setVisibility(View.VISIBLE);
 				} else {
+					ArrayList<Map<String, Object>> filterList = FilterSearch(s.toString().trim());
+					
+					if (filterList.size() == 0) {
+						friends_search_fail_textView.setVisibility(View.VISIBLE);
+						friends_alphabetScrollBar.setVisibility(View.VISIBLE);
+					} else {
+						friends_search_fail_textView.setVisibility(View.GONE);
+						friends_alphabetScrollBar.setVisibility(View.GONE);
+					}
+					
+					filterFriendsAdapter = new FilterFriendsAdapter(getActivity(),filterList);
+					friends_listView.setAdapter(filterFriendsAdapter);
+					
 					friends_alphabetScrollBar.setVisibility(View.GONE);
 					friends_top_layout.setVisibility(View.GONE);
 				}
@@ -135,13 +168,11 @@ public class FriendsPage extends Fragment{
 			@Override
 			public void beforeTextChanged(CharSequence s, int start, int count,
 					int after) {
-				// TODO Auto-generated method stub
 				
 			}
 			
 			@Override
 			public void afterTextChanged(Editable s) {
-				// TODO Auto-generated method stub
 				
 			}
 		});
@@ -161,7 +192,6 @@ public class FriendsPage extends Fragment{
 			
 			@Override
 			public void onTouchingLetterChanged(String s) {
-				// TODO Auto-generated method stub
 				friends_letter_textView.setText(s);
 				friends_letter_textView.setVisibility(View.VISIBLE);
 				
@@ -195,7 +225,7 @@ public class FriendsPage extends Fragment{
     @SuppressWarnings("unchecked")
 	private void initAdapter() {
     	friends_mapList = new ArrayList<Map<String,Object>>();
-    	ArrayList<FriendVO> friendList = fellowService.searchFriend("key").getFriendList();
+    	friendList = fellowService.searchFriend("key").getFriendList();
     	
     	//排序
     	Collections.sort(friendList, new PinyinComparator());
@@ -209,14 +239,14 @@ public class FriendsPage extends Fragment{
     		friends_mapList.add(map);
     	}
     	//初始话ListView适配器.
-    	adapter = new FriendsAdapter(getActivity(),friends_mapList);
+    	friendsAdapter = new FriendsAdapter(getActivity(),friends_mapList);
     }
     
     /**
      * Title: alphaIndexer
      * Description:查询侧边字母咧中的字母在listView中的位置.
      * @param s 侧边字幕列对应的字母.
-     * @return int 对应字母在listview中的位置。
+     * @return int 对应字母在listView中的位置。
      */
     private int alphaIndexer(String s) {
 		int position = 0;
@@ -230,4 +260,46 @@ public class FriendsPage extends Fragment{
 		}
 		return position;
 	}
+   
+    /**
+     * Title: FilterSearch
+     * Description: 根据关键字过滤好友列表.
+     * @param keyword 想要搜索的关键字.
+     * @return ArrayList<Map<String, Object>>
+     */
+    private ArrayList<Map<String, Object>> FilterSearch(String keyword) {
+		ArrayList<Map<String, Object>> friendVOs= new ArrayList<Map<String,Object>>();
+      
+		
+		//遍历friendList  
+        for (int i = 0; i < friendList.size(); i++) {  
+            //如果遍历到List包含所输入字符串  
+            if (isStrInString(PinyinUtils.getPingYin(friendList.get(i).getUsername()),keyword)
+            		|| friendList.get(i).getUsername().contains(keyword)
+            		||isStrInString(friendList.get(i).getBeginWord(),keyword)){      
+    			Map<String, Object> map = new HashMap<String, Object>();
+    			map.put("name", friendList.get(i).getUsername());
+    			map.put("content", friendList.get(i).getMakeFriendContent());
+    			map.put("icon", R.drawable.usericon);    //TODO
+    			map.put("beginword", friendList.get(i).getBeginWord());
+    			friendVOs.add(map);
+            }  
+        }  
+        	return friendVOs;
+	}
+    
+    /**
+     * Title: isStrInString
+     * Description: 判断smallStr是否是bigStr的一部分.
+     * @param bigStr 长度长的字符串.
+     * @param smallStr 短的字符串.
+     * @return boolean:是一部分返回true,否则返回false.
+     */
+	private boolean isStrInString(String bigStr,String smallStr){
+		  if(bigStr.toUpperCase().indexOf(smallStr.toUpperCase())>-1){
+			  return true;
+		  }else{
+			  return false;
+		  }
+	} 
 }

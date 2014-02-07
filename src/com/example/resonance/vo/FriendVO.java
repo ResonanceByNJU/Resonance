@@ -1,6 +1,10 @@
 package com.example.resonance.vo;
 
-public class FriendVO {
+import java.io.Serializable;
+
+public class FriendVO implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 	private String beginWord;
 	private String imagePath;
 	private String username;

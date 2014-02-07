@@ -1,5 +1,7 @@
 package com.example.resonance.view.friends;
 
+import com.example.resonance.vo.FriendVO;
+
 import android.app.Activity;
 import android.os.Bundle;
 
@@ -10,14 +12,19 @@ import android.os.Bundle;
  * @date 2014-1-26
  */
 public class FriendsInfoActivity extends Activity{
+	private static FriendVO friendVO = null;
     /* (non-Javadoc)
     * @see android.app.Activity#onCreate(android.os.Bundle)
     */
    @Override
    protected void onCreate(Bundle savedInstanceState) {
-   	// TODO Auto-generated method stub
-   	super.onCreate(savedInstanceState);
-   	initView();
+   	    // TODO Auto-generated method stub
+   	    super.onCreate(savedInstanceState);
+   	    //获取传递过来的数据.
+    	Bundle bundle = getIntent().getExtras();
+   	    friendVO = (FriendVO) bundle.getSerializable("friendVO");
+   	    
+   	    initView();
    }
    
    /**
