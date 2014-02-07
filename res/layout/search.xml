@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/head"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/search_btns_top"
+        android:gravity="center" 
+        android:orientation="vertical">
+       
+        <Button
+            android:id="@+id/search_heart_btn"
+            android:layout_width="@dimen/search_btn_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_style_green"
+            android:gravity="center"
+            android:text="@string/search_heart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/search_btns_textsize"
+            /> 
+            
+         <Button
+            android:id="@+id/search_strategy_btn"
+            android:layout_width="@dimen/search_btn_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_style_green"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/search_btns_space"
+            android:text="@string/search_strategy"
+            android:textColor="@color/black"
+            android:textSize="@dimen/search_btns_textsize"
+            /> 
+            
+          <Button
+            android:id="@+id/search_chatroom_btn"
+            android:layout_width="@dimen/search_btn_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_style_green"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/search_btns_space"
+            android:text="@string/search_chatroom"
+            android:textColor="@color/black"
+            android:textSize="@dimen/search_btns_textsize"
+            /> 
+            
+           <Button
+            android:id="@+id/search_questions_btn"
+            android:layout_width="@dimen/search_btn_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_style_green"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/search_btns_space"
+            android:text="@string/search_questions"
+            android:textColor="@color/black"
+            android:textSize="@dimen/search_btns_textsize"
+            /> 
+    
+    </LinearLayout>
+
+</LinearLayout>

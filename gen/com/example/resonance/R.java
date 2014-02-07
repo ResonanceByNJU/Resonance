@@ -74,38 +74,55 @@ public final class R {
          */
         public static final int head_padding=0x7f050003;
         public static final int head_textsize=0x7f050002;
+        /**  好友列表每一项头像宽度 
+         */
+        public static final int search_btn_width=0x7f05000d;
+        /**  发现页面按钮组具体顶部标题的距离 
+         */
+        public static final int search_btns_space=0x7f05000f;
+        /**  发现页面按钮之间相距的距离 
+         */
+        public static final int search_btns_textsize=0x7f050010;
+        /**  发现页面按钮的宽度 
+         */
+        public static final int search_btns_top=0x7f05000e;
     }
     public static final class drawable {
-        public static final int friends_add=0x7f020000;
-        public static final int friends_add_btn=0x7f020001;
-        public static final int friends_add_pre=0x7f020002;
-        public static final int friends_search=0x7f020003;
-        public static final int friends_search_edit_pre=0x7f020004;
-        public static final int friends_toast_letter_bg=0x7f020005;
-        public static final int home_btn_bg=0x7f020006;
-        public static final int ic_launcher=0x7f020007;
-        public static final int icon_friends_nor=0x7f020008;
-        public static final int icon_friends_pre=0x7f020009;
-        public static final int icon_homepage_nor=0x7f02000a;
-        public static final int icon_homepage_pre=0x7f02000b;
-        public static final int icon_message_nor=0x7f02000c;
-        public static final int icon_message_pre=0x7f02000d;
-        public static final int icon_search_nor=0x7f02000e;
-        public static final int icon_search_pre=0x7f02000f;
-        public static final int listitem_bg=0x7f020010;
-        public static final int listitem_down=0x7f020011;
-        public static final int listitem_up=0x7f020012;
-        public static final int maintab_toolbar_bg=0x7f020013;
-        public static final int selector_tab_background=0x7f020014;
-        public static final int tab_friends_btn=0x7f020015;
-        public static final int tab_homepage_btn=0x7f020016;
-        public static final int tab_message_btn=0x7f020017;
-        public static final int tab_search_btn=0x7f020018;
-        public static final int tab_textcolor=0x7f020019;
-        public static final int usericon=0x7f02001a;
+        public static final int btn_style_green=0x7f020000;
+        public static final int btn_style_one_disabled=0x7f020001;
+        public static final int btn_style_one_focused=0x7f020002;
+        public static final int btn_style_one_normal=0x7f020003;
+        public static final int btn_style_one_pressed=0x7f020004;
+        public static final int friends_add=0x7f020005;
+        public static final int friends_add_btn=0x7f020006;
+        public static final int friends_add_pre=0x7f020007;
+        public static final int friends_search=0x7f020008;
+        public static final int friends_search_edit_pre=0x7f020009;
+        public static final int friends_toast_letter_bg=0x7f02000a;
+        public static final int home_btn_bg=0x7f02000b;
+        public static final int ic_launcher=0x7f02000c;
+        public static final int icon_friends_nor=0x7f02000d;
+        public static final int icon_friends_pre=0x7f02000e;
+        public static final int icon_homepage_nor=0x7f02000f;
+        public static final int icon_homepage_pre=0x7f020010;
+        public static final int icon_message_nor=0x7f020011;
+        public static final int icon_message_pre=0x7f020012;
+        public static final int icon_search_nor=0x7f020013;
+        public static final int icon_search_pre=0x7f020014;
+        public static final int listitem_bg=0x7f020015;
+        public static final int listitem_down=0x7f020016;
+        public static final int listitem_up=0x7f020017;
+        public static final int maintab_toolbar_bg=0x7f020018;
+        public static final int selector_tab_background=0x7f020019;
+        public static final int tab_friends_btn=0x7f02001a;
+        public static final int tab_homepage_btn=0x7f02001b;
+        public static final int tab_message_btn=0x7f02001c;
+        public static final int tab_search_btn=0x7f02001d;
+        public static final int tab_textcolor=0x7f02001e;
+        public static final int usericon=0x7f02001f;
     }
     public static final class id {
-        public static final int action_settings=0x7f090010;
+        public static final int action_settings=0x7f090014;
         public static final int friends_add=0x7f090003;
         public static final int friends_alphabetscrollbar=0x7f090008;
         public static final int friends_letter=0x7f090009;
@@ -119,63 +136,75 @@ public final class R {
         public static final int friends_top_layout=0x7f090001;
         public static final int friends_top_textview=0x7f090002;
         public static final int head_textView=0x7f09000d;
-        public static final int imageview=0x7f09000e;
+        public static final int imageview=0x7f090012;
         public static final int realtabcontent=0x7f090000;
-        public static final int textview=0x7f09000f;
+        public static final int search_chatroom_btn=0x7f090010;
+        public static final int search_heart_btn=0x7f09000e;
+        public static final int search_questions_btn=0x7f090011;
+        public static final int search_strategy_btn=0x7f09000f;
+        public static final int textview=0x7f090013;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int friends=0x7f030001;
         public static final int friends_list_item=0x7f030002;
         public static final int head=0x7f030003;
-        public static final int tab_item_view=0x7f030004;
+        public static final int search=0x7f030004;
+        public static final int tab_item_view=0x7f030005;
     }
     public static final class menu {
         public static final int main=0x7f080000;
     }
     public static final class string {
         public static final int action_settings=0x7f060001;
-        public static final int activity_addfriend=0x7f060011;
-        public static final int activity_chat=0x7f060016;
-        public static final int activity_chatwitha=0x7f060018;
-        public static final int activity_chatwithq=0x7f060017;
-        public static final int activity_fitsuccess=0x7f06000d;
+        public static final int activity_addfriend=0x7f060012;
+        public static final int activity_chat=0x7f060017;
+        public static final int activity_chatwitha=0x7f060019;
+        public static final int activity_chatwithq=0x7f060018;
+        public static final int activity_fitsuccess=0x7f06000e;
         /**  各个activity的名称 
          */
-        public static final int activity_friends=0x7f060003;
-        public static final int activity_friendsinfo=0x7f060010;
-        public static final int activity_groupchat=0x7f06000f;
-        public static final int activity_groupchatrooms=0x7f06000e;
-        public static final int activity_homepage=0x7f060006;
-        public static final int activity_improveinfo=0x7f060009;
-        public static final int activity_login=0x7f060007;
-        public static final int activity_message=0x7f060004;
-        public static final int activity_modifyinfo=0x7f06000a;
-        public static final int activity_modifyinterest=0x7f06000b;
-        public static final int activity_questionbyalp=0x7f060012;
-        public static final int activity_questionbycat=0x7f060013;
-        public static final int activity_register=0x7f060008;
-        public static final int activity_search=0x7f060005;
-        public static final int activity_strategy=0x7f060014;
-        public static final int activity_strategyinfo=0x7f060015;
-        public static final int activity_testheart=0x7f06000c;
+        public static final int activity_friends=0x7f060004;
+        public static final int activity_friendsinfo=0x7f060011;
+        public static final int activity_groupchat=0x7f060010;
+        public static final int activity_groupchatrooms=0x7f06000f;
+        public static final int activity_homepage=0x7f060007;
+        public static final int activity_improveinfo=0x7f06000a;
+        public static final int activity_login=0x7f060008;
+        public static final int activity_message=0x7f060005;
+        public static final int activity_modifyinfo=0x7f06000b;
+        public static final int activity_modifyinterest=0x7f06000c;
+        public static final int activity_questionbyalp=0x7f060013;
+        public static final int activity_questionbycat=0x7f060014;
+        public static final int activity_register=0x7f060009;
+        public static final int activity_search=0x7f060006;
+        public static final int activity_strategy=0x7f060015;
+        public static final int activity_strategyinfo=0x7f060016;
+        public static final int activity_testheart=0x7f06000d;
         /**  friends layout 
          */
-        public static final int add_friends=0x7f06001e;
+        public static final int add_friends=0x7f06001f;
         public static final int app_name=0x7f060000;
         /**  friends_list_item layout 
          */
-        public static final int friends_list_image=0x7f060021;
-        public static final int friends_search=0x7f06001f;
-        public static final int friends_search_fail=0x7f060020;
+        public static final int friends_list_image=0x7f060022;
+        public static final int friends_search=0x7f060020;
+        public static final int friends_search_fail=0x7f060021;
+        public static final int head=0x7f060003;
         public static final int hello_world=0x7f060002;
-        public static final int main_friends=0x7f06001a;
-        public static final int main_homepage=0x7f06001c;
+        public static final int main_friends=0x7f06001b;
+        public static final int main_homepage=0x7f06001d;
         /**  activity_main layout 
          */
-        public static final int main_message=0x7f060019;
-        public static final int main_search=0x7f06001b;
-        public static final int main_tab_now=0x7f06001d;
+        public static final int main_message=0x7f06001a;
+        public static final int main_search=0x7f06001c;
+        public static final int main_tab_now=0x7f06001e;
+        public static final int search_chatroom=0x7f060025;
+        /**  search layout 
+         */
+        public static final int search_heart=0x7f060023;
+        public static final int search_questions=0x7f060026;
+        public static final int search_strategy=0x7f060024;
     }
     public static final class style {
         /** 

@@ -16,4 +16,9 @@
     
     <dimen name="friends_item_minheight">50dip</dimen>    <!-- 好友列表每一项的最小高度 -->
     <dimen name="friends_item_image_width">48dip</dimen>  <!-- 好友列表每一项头像宽度 -->
+    
+    <dimen name="search_btn_width">200dip</dimen>  <!-- 发现页面按钮的宽度 -->
+    <dimen name="search_btns_top">80dip</dimen>  <!-- 发现页面按钮组具体顶部标题的距离 --> 
+    <dimen name="search_btns_space">40dip</dimen>     <!-- 发现页面按钮之间相距的距离 -->
+    <dimen name="search_btns_textsize">18sp</dimen>     <!-- 发现页面按钮字体大小 -->
 </resources>

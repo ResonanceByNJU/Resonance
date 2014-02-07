@@ -4,6 +4,7 @@
     <string name="app_name">Resonance</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="head">head</string>
     
     <!-- 各个activity的名称 -->
     <string name="activity_friends">FriendsActivity</string>
@@ -44,4 +45,10 @@
     
     <!-- friends_list_item layout -->
     <string name="friends_list_image">头像</string>
+    
+    <!-- search layout -->
+    <string name="search_heart">测试心跳</string>
+    <string name="search_strategy">查看交友秘籍</string>
+    <string name="search_chatroom">热门群聊室</string>
+    <string name="search_questions">系统题库</string>
 </resources>
