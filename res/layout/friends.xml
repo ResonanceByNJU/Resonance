@@ -78,7 +78,7 @@
             android:text="@string/friends_search_fail"
             android:visibility="gone"/>
         
-        <com.example.resonance.view.helper.AlphabetScrollBar
+        <com.example.resonance.view.widget.AlphabetScrollBar
             android:id="@+id/friends_alphabetscrollbar"
             android:layout_gravity="right"
             android:layout_width="@dimen/friends_sidebar_width"

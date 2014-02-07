@@ -44,7 +44,7 @@ public class TestVOs {
 		friendVOs.add(friendVO9);
 		FriendVO friendVO10 = new FriendVO("N","","ÄàÃº","makefriendsContent10");
 		friendVOs.add(friendVO10);
-		FriendVO friendVO11 = new FriendVO("B","","Bob","makefriendsContent11");
+		FriendVO friendVO11 = new FriendVO("B","","bob","makefriendsContent11");
 		friendVOs.add(friendVO11);
 		FriendVO friendVO12 = new FriendVO("Q","","Ç¿Ç¿","makefriendsContent12");
 		friendVOs.add(friendVO12);
@@ -54,7 +54,7 @@ public class TestVOs {
 		friendVOs.add(friendVO14);
 		FriendVO friendVO15 = new FriendVO("C","","³Â","makefriendsContent15");
 		friendVOs.add(friendVO15);
-		FriendVO friendVO16 = new FriendVO("H","","Heimi","makefriendsContent16");
+		FriendVO friendVO16 = new FriendVO("H","","heimi","makefriendsContent16");
 		friendVOs.add(friendVO16);
 		FriendVO friendVO17 = new FriendVO("R","","rose","makefriendsContent17");
 		friendVOs.add(friendVO17);

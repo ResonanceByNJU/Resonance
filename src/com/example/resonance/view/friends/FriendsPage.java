@@ -1,13 +1,24 @@
 package com.example.resonance.view.friends;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import com.example.resonance.R;
 import com.example.resonance.adapter.FriendsAdapter;
 import com.example.resonance.stub.FellowService_Stub;
-import com.example.resonance.view.helper.AlphabetScrollBar;
+import com.example.resonance.utils.PinyinComparator;
+import com.example.resonance.utils.PrintHelper;
+import com.example.resonance.view.widget.AlphabetScrollBar;
+import com.example.resonance.view.widget.AlphabetScrollBar.OnTouchingLetterChangedListener;
+import com.example.resonance.vo.FriendVO;
 
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -30,6 +41,7 @@ import android.widget.TextView;
  */
 public class FriendsPage extends Fragment{
 	private FellowService_Stub fellowService = new FellowService_Stub();
+	private List<Map<String, Object>> friends_mapList = null;
 	
 	private FriendsAdapter adapter = null;
     //好友列表页面
@@ -48,6 +60,9 @@ public class FriendsPage extends Fragment{
     private TextView friends_search_fail_textView = null;
     //好友列表顶部layout
     private FrameLayout friends_top_layout = null;
+    
+    private Handler handler = new Handler();
+    
 	/* (non-Javadoc)
 	 * Title: onCreateView
 	 * @see android.support.v4.app.Fragment#onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)
@@ -58,6 +73,8 @@ public class FriendsPage extends Fragment{
 		// TODO Auto-generated method stub
 		
 		friendsView = inflater.inflate(R.layout.friends, container, false);
+		
+		initAdapter();
 		
 		initView();
 		
@@ -81,8 +98,7 @@ public class FriendsPage extends Fragment{
 			}
 		});
 		
-		//初始话ListView适配器.
-		adapter = new FriendsAdapter(getActivity(),fellowService.searchFriend("key"));
+		
 		
 		//初始化好友列表
 		friends_listView = (ListView) friendsView.findViewById(R.id.friends_listvew);
@@ -139,7 +155,79 @@ public class FriendsPage extends Fragment{
 		
 		//初始化字母列视图
 		friends_alphabetScrollBar = (AlphabetScrollBar) friendsView.findViewById(R.id.friends_alphabetscrollbar);
-		friends_alphabetScrollBar.setTextView(friends_letter_textView);
+	//	friends_alphabetScrollBar.setTextView(friends_letter_textView);
     	
+		friends_alphabetScrollBar.setOnTouchingLetterChangedListener(new OnTouchingLetterChangedListener() {
+			
+			@Override
+			public void onTouchingLetterChanged(String s) {
+				// TODO Auto-generated method stub
+				friends_letter_textView.setText(s);
+				friends_letter_textView.setVisibility(View.VISIBLE);
+				
+				handler.removeCallbacks(letterThred);
+				handler.postDelayed(letterThred, 1000);
+				
+				if (alphaIndexer(s) > 0) {
+					int position = alphaIndexer(s);
+					friends_listView.setSelection(position);
+				}
+			}
+		});
     }
+    
+
+    
+    //显示字母的TextView的线程，控制不可见.
+    private Runnable letterThred = new Runnable() {
+		
+		@Override
+		public void run() {
+			friends_letter_textView.setVisibility(View.GONE);
+			
+		}
+	};
+    
+    /**
+     * Title: initAdapter
+     * Description: 初始化适配器.
+     */
+    @SuppressWarnings("unchecked")
+	private void initAdapter() {
+    	friends_mapList = new ArrayList<Map<String,Object>>();
+    	ArrayList<FriendVO> friendList = fellowService.searchFriend("key").getFriendList();
+    	
+    	//排序
+    	Collections.sort(friendList, new PinyinComparator());
+    	
+    	for(FriendVO friendVO:friendList) {
+    		Map<String, Object> map = new HashMap<String, Object>();
+    		map.put("name", friendVO.getUsername());
+    		map.put("content", friendVO.getMakeFriendContent());
+    		map.put("icon", R.drawable.usericon);  //TODO
+    		map.put("beginword", friendVO.getBeginWord());
+    		friends_mapList.add(map);
+    	}
+    	//初始话ListView适配器.
+    	adapter = new FriendsAdapter(getActivity(),friends_mapList);
+    }
+    
+    /**
+     * Title: alphaIndexer
+     * Description:查询侧边字母咧中的字母在listView中的位置.
+     * @param s 侧边字幕列对应的字母.
+     * @return int 对应字母在listview中的位置。
+     */
+    private int alphaIndexer(String s) {
+		int position = 0;
+		for (int i = 0; i < friends_mapList.size(); i++) {
+
+			String py = (String) friends_mapList.get(i).get("beginword");
+			if (py.startsWith(s)) {
+				position = i;
+				break;
+			}
+		}
+		return position;
+	}
 }

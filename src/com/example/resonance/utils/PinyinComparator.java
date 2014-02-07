@@ -9,8 +9,8 @@ import com.example.resonance.vo.FriendVO;
 public class PinyinComparator implements Comparator {
 
 	public int compare(Object o1, Object o2) {
-		String str1 = PinyinUtils.getPingYin(((FriendVO)o1).getBeginWord());
-		String str2 = PinyinUtils.getPingYin(((FriendVO)o2).getBeginWord());
+		String str1 = PinyinUtils.getPingYin(((FriendVO)o1).getUsername());
+		String str2 = PinyinUtils.getPingYin(((FriendVO)o2).getUsername());
 		return str1.compareTo(str2);
 	}
 
