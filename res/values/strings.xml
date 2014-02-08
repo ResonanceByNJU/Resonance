@@ -57,4 +57,10 @@
     <!-- group_chat_room layout -->
     <string name="group_chat_rooms">群聊室</string>
     <string name="group_chat_room_name">群聊室名称</string>
+    
+    <!-- message_item layout -->
+    <string name="message_icon">信息发送人头像</string>
+    <string name="message_name">信息发送人</string>
+    <string name="message_time">信息发送时间</string>
+    <string name="message_message">信息内容</string>
 </resources>

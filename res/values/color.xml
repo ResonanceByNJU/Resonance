@@ -14,4 +14,6 @@
     <color name="friends_listview_divider">#336598</color>  <!-- 好友列表的分割线颜色 -->
     
     <color name="friends_list_content">#C2C2C2</color>  <!-- 好友列表每一项的介绍字体颜色 -->
+    
+    <color name="message_item_time">#666</color>    <!-- 消息列表每一项中时间和内容字体颜色 -->
 </resources>

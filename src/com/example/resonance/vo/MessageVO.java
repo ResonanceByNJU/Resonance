@@ -1,7 +1,9 @@
 package com.example.resonance.vo;
 
-public class MessageVO {
+import java.io.Serializable;
 
+public class MessageVO implements Serializable {
+	private static final long serialVersionUID = 1L;
 	private long sendID;
 	private long receiveID;
 	private String sendTime;

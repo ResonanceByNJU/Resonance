@@ -26,6 +26,9 @@ public final class R {
         /**  主页面tab中的文字颜色 
          */
         public static final int head_textcolor=0x7f040007;
+        /**  好友列表每一项的介绍字体颜色 
+         */
+        public static final int message_item_time=0x7f04000a;
         public static final int qqblue=0x7f040001;
         /**  淡蓝色 
          */
@@ -92,6 +95,9 @@ public final class R {
          */
         public static final int head_padding=0x7f050003;
         public static final int head_textsize=0x7f050002;
+        /**  群聊室两列之间的距离 
+         */
+        public static final int message_item_height=0x7f050017;
         /**  好友列表每一项头像宽度 
          */
         public static final int search_btn_width=0x7f050010;
@@ -131,20 +137,24 @@ public final class R {
         public static final int listitem_down=0x7f020016;
         public static final int listitem_up=0x7f020017;
         public static final int maintab_toolbar_bg=0x7f020018;
-        public static final int mm_title_back_focused=0x7f020019;
-        public static final int mm_title_back_normal=0x7f02001a;
-        public static final int mm_title_back_pressed=0x7f02001b;
-        public static final int selector_tab_background=0x7f02001c;
-        public static final int tab_friends_btn=0x7f02001d;
-        public static final int tab_homepage_btn=0x7f02001e;
-        public static final int tab_message_btn=0x7f02001f;
-        public static final int tab_search_btn=0x7f020020;
-        public static final int tab_textcolor=0x7f020021;
-        public static final int title_btn_back=0x7f020022;
-        public static final int usericon=0x7f020023;
+        public static final int message_listitem=0x7f020019;
+        public static final int mm_listitem_grey_normal=0x7f02001a;
+        public static final int mm_listitem_normal=0x7f02001b;
+        public static final int mm_listitem_pressed=0x7f02001c;
+        public static final int mm_title_back_focused=0x7f02001d;
+        public static final int mm_title_back_normal=0x7f02001e;
+        public static final int mm_title_back_pressed=0x7f02001f;
+        public static final int selector_tab_background=0x7f020020;
+        public static final int tab_friends_btn=0x7f020021;
+        public static final int tab_homepage_btn=0x7f020022;
+        public static final int tab_message_btn=0x7f020023;
+        public static final int tab_search_btn=0x7f020024;
+        public static final int tab_textcolor=0x7f020025;
+        public static final int title_btn_back=0x7f020026;
+        public static final int usericon=0x7f020027;
     }
     public static final class id {
-        public static final int action_settings=0x7f09001a;
+        public static final int action_settings=0x7f09001f;
         public static final int chat_room_gridview=0x7f09000f;
         public static final int chat_room_logo=0x7f090001;
         public static final int chat_room_name=0x7f090002;
@@ -163,25 +173,33 @@ public final class R {
         public static final int head_btn_back=0x7f090012;
         public static final int head_ret_textview=0x7f090013;
         public static final int head_textView=0x7f090010;
-        public static final int imageview=0x7f090018;
+        public static final int imageview=0x7f09001d;
+        public static final int message_icon_imageview=0x7f090015;
+        public static final int message_listview=0x7f090014;
+        public static final int message_message_textview=0x7f090018;
+        public static final int message_name_textview=0x7f090016;
+        public static final int message_time_textview=0x7f090017;
         public static final int realtabcontent=0x7f090000;
         public static final int rl_layout=0x7f090011;
-        public static final int search_chatroom_btn=0x7f090016;
-        public static final int search_heart_btn=0x7f090014;
-        public static final int search_questions_btn=0x7f090017;
-        public static final int search_strategy_btn=0x7f090015;
-        public static final int textview=0x7f090019;
+        public static final int search_chatroom_btn=0x7f09001b;
+        public static final int search_heart_btn=0x7f090019;
+        public static final int search_questions_btn=0x7f09001c;
+        public static final int search_strategy_btn=0x7f09001a;
+        public static final int textview=0x7f09001e;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int chat_room_item=0x7f030001;
-        public static final int friends=0x7f030002;
-        public static final int friends_list_item=0x7f030003;
-        public static final int group_chat_room=0x7f030004;
-        public static final int head=0x7f030005;
-        public static final int head_ret=0x7f030006;
-        public static final int search=0x7f030007;
-        public static final int tab_item_view=0x7f030008;
+        public static final int chat=0x7f030001;
+        public static final int chat_room_item=0x7f030002;
+        public static final int friends=0x7f030003;
+        public static final int friends_list_item=0x7f030004;
+        public static final int group_chat_room=0x7f030005;
+        public static final int head=0x7f030006;
+        public static final int head_ret=0x7f030007;
+        public static final int message=0x7f030008;
+        public static final int message_item=0x7f030009;
+        public static final int search=0x7f03000a;
+        public static final int tab_item_view=0x7f03000b;
     }
     public static final class menu {
         public static final int main=0x7f080000;
@@ -234,6 +252,12 @@ public final class R {
         public static final int main_message=0x7f06001b;
         public static final int main_search=0x7f06001d;
         public static final int main_tab_now=0x7f06001f;
+        /**  message_item layout 
+         */
+        public static final int message_icon=0x7f06002a;
+        public static final int message_message=0x7f06002d;
+        public static final int message_name=0x7f06002b;
+        public static final int message_time=0x7f06002c;
         public static final int ret=0x7f060004;
         public static final int search_chatroom=0x7f060026;
         /**  search layout 

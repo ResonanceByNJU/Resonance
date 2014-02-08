@@ -28,4 +28,7 @@
     <dimen name="chat_room_item_width">90dip</dimen>  <!-- 群聊室每一个Item的宽度 -->
     <dimen name="chat_room_item_v_spacing">15dip</dimen>   <!-- 群聊室两行之间的距离 -->
     <dimen name="chat_room_item_h_spacing">10dip</dimen>   <!-- 群聊室两列之间的距离 -->
+    
+    <dimen name="message_item_height">60dip</dimen>   <!-- 消息每一个Item的高度 -->
+    
 </resources>
