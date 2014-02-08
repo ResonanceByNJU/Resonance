@@ -6,6 +6,9 @@
     <dimen name="head_textsize">28sp</dimen>   <!-- 主页面顶部标题字体大小 -->
 	<dimen name="head_padding">10dip</dimen>   <!-- 主页面顶部标题字体距离顶部和底部的距离 -->
 	<dimen name="head_height">50dip</dimen>   <!-- 主页面顶部标题的高度 -->
+	<dimen name="head_btn_textsize">15sp</dimen>  <!-- 主页顶部标题中按钮中字体大小 -->
+	<dimen name="head_btn_width">70dip</dimen>    <!-- 主页顶端标题中按钮的宽度 -->
+	<dimen name="head_btn_height">45dip</dimen>    <!-- 主页顶端标题中按钮的高度 -->
 	
 	<dimen name="friends_search_textsize">15sp</dimen>   <!-- 好友页面搜索框中的字体大小 -->
 	<dimen name="friends_listview_divider">2dip</dimen>   <!-- 好友列表分割线的高度 -->
@@ -21,4 +24,8 @@
     <dimen name="search_btns_top">80dip</dimen>  <!-- 发现页面按钮组具体顶部标题的距离 --> 
     <dimen name="search_btns_space">40dip</dimen>     <!-- 发现页面按钮之间相距的距离 -->
     <dimen name="search_btns_textsize">18sp</dimen>     <!-- 发现页面按钮字体大小 -->
+    
+    <dimen name="chat_room_item_width">90dip</dimen>  <!-- 群聊室每一个Item的宽度 -->
+    <dimen name="chat_room_item_v_spacing">15dip</dimen>   <!-- 群聊室两行之间的距离 -->
+    <dimen name="chat_room_item_h_spacing">10dip</dimen>   <!-- 群聊室两列之间的距离 -->
 </resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/head_ret"/>
+    
+    <!-- 使用GridView显示存在的群聊室 -->
+    <GridView android:id="@+id/chat_room_gridview"
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="auto_fit"  
+    	android:verticalSpacing="@dimen/chat_room_item_v_spacing"  
+    	android:horizontalSpacing="@dimen/chat_room_item_h_spacing"  
+    	android:columnWidth="@dimen/chat_room_item_width"  
+    	android:stretchMode="columnWidth"  
+    	android:gravity="center">
+        
+    </GridView>
+    
+
+</LinearLayout>
