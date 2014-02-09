@@ -31,4 +31,8 @@
     
     <dimen name="message_item_height">60dip</dimen>   <!-- 消息每一个Item的高度 -->
     
+    <dimen name="chat_send_width">60dip</dimen>    <!--聊天页面发送按钮的宽度  -->
+    <dimen name="chat_send_height">40dip</dimen>    <!--聊天页面发送按钮的高度  -->
+    <dimen name="chat_bottom_height">50dip</dimen>    <!--聊天页面底部发送框的高度  -->
+    <dimen name="chat_send_textsize">18sp</dimen>   <!-- 聊天页面输入框中字体大小 -->
 </resources>

@@ -92,6 +92,9 @@
         <activity android:name="com.example.resonance.view.message.ChatWithAActivity"
             android:label="@string/activity_chatwitha">
         </activity>
+        <activity android:name="com.example.resonance.view.widget.DialogActivity"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
     </application>
 
 </manifest>

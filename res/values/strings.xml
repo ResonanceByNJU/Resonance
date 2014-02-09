@@ -6,6 +6,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="head">head</string>
     <string name="ret">返回</string>
+    <string name="right">右边按钮</string>
     
     
     <!-- 各个activity的名称 -->
@@ -63,4 +64,8 @@
     <string name="message_name">信息发送人</string>
     <string name="message_time">信息发送时间</string>
     <string name="message_message">信息内容</string>
+    
+    <string name="chat_send">发送</string>
+    <string name="chat_send_icon">发送人头像</string>
+    <string name="chat_receiver_icon">收信人头像</string>
 </resources>

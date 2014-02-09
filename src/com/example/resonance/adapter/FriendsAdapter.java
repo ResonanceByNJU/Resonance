@@ -5,7 +5,6 @@ import java.util.Map;
 
 import com.example.resonance.R;
 import com.example.resonance.utils.PinyinUtils;
-import com.example.resonance.utils.PrintHelper;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -80,7 +79,6 @@ public class FriendsAdapter extends BaseAdapter{
 			}
 		}
 		
-		PrintHelper.Print(getClass().getName(), position + ":" + map.get("name"));
 		holder.name_textView.setText((String)map.get("name"));
 		holder.content_textView.setText((String)map.get("content"));
 		holder.icon_imageView.setImageResource((Integer)map.get("icon"));

@@ -4,9 +4,7 @@ import java.util.ArrayList;
 
 import com.example.resonance.R;
 import com.example.resonance.adapter.MessageAdapter;
-import com.example.resonance.utils.PrintHelper;
 import com.example.resonance.vo.MessageVO;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -54,6 +52,7 @@ public class MessagePage extends Fragment{
 		message_listview = (ListView) messageView.findViewById(R.id.message_listview);
 		initAdapter();
 		message_listview.setAdapter(messageAdapter);
+		message_listview.setClickable(true);
 		message_listview.setOnItemClickListener(new OnItemClickListener() {
 
 			@Override
@@ -63,9 +62,7 @@ public class MessagePage extends Fragment{
 				
 				Bundle bundle = new Bundle();
 				bundle.putSerializable("messageVO", messageVO);
-				PrintHelper.Print(getClass().getName(), "test");
 				Intent intent = new Intent(getActivity(), ChatActivity.class);
-				PrintHelper.Print(getClass().getName(), "test2");
 				intent.putExtras(bundle);
 				startActivity(intent);
 			}
