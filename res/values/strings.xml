@@ -68,4 +68,16 @@
     <string name="chat_send">发送</string>
     <string name="chat_send_icon">发送人头像</string>
     <string name="chat_receiver_icon">收信人头像</string>
+    
+    <!-- friend_info layout -->
+    <string name="friend_info">好友资料</string>
+    <string name="friend_info_icon">好友头像</string>
+    <string name="friend_info_name">好友姓名</string>
+    <string name="friend_info_id">好友ID:</string>
+    <string name="friend_info_content">交友宣言</string>
+    <string name="friend_info_interests">兴趣</string>
+    <string name="friend_info_send">发消息</string>
+    <string name="friend_info_first_interest">第一个兴趣</string>
+    <string name="friend_info_second_interest">第二个兴趣</string>
+    <string name="friend_info_more_interest">更多兴趣</string>
 </resources>

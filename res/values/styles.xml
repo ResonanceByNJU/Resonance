@@ -52,7 +52,7 @@
 		<item name="android:background">#bfbfbf</item> 
 	</style>
   
-	     
+	 <!-- 聊天Item内容字体样式 -->    
 	<style name="chat_content_date_style">
 	    <item name="android:minHeight">50dip</item>
 	    <item name="android:gravity">left|center</item>    
@@ -64,6 +64,7 @@
 		<item name="android:background">#bfbfbf</item> 
 	</style>	 
 	
+	<!-- 聊天Item姓名的字体样式 -->
 	<style name="chat_text_name_style">  
 		<item name="android:textColor">#818181</item>   
 		<item name="android:textSize">15sp</item>      
@@ -71,4 +72,15 @@
 	</style>
 	
 	
+	<!-- 自定义Dialog样式 -->
+	<style name="MyDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
 </resources>

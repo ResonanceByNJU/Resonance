@@ -8,6 +8,8 @@ import com.example.resonance.stub.TestVOs;
 import com.example.resonance.utils.DateHelper;
 import com.example.resonance.utils.PrintHelper;
 import com.example.resonance.view.friends.FriendsInfoActivity;
+import com.example.resonance.view.widget.CustomDialog;
+import com.example.resonance.view.widget.CustomDialog.Builder;
 import com.example.resonance.view.widget.DialogActivity;
 import com.example.resonance.vo.ChatVO;
 import com.example.resonance.vo.FriendVO;
@@ -15,6 +17,7 @@ import com.example.resonance.vo.MessageVO;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -108,8 +111,32 @@ public class ChatActivity extends Activity{
 				String chat_message = send_editText.getText().toString();
 				//≈–∂œ ‰»Î «∑ÒŒ™ø’.
 				if(chat_message.equals("")) {
-					Intent intent = new Intent(ChatActivity.this,DialogActivity.class);
-					startActivity(intent);
+			//		Intent intent = new Intent(ChatActivity.this,DialogActivity.class);
+				//	startActivity(intent);
+				
+					
+					CustomDialog.Builder builder = new CustomDialog.Builder(ChatActivity.this);
+					builder.setMessage("this is a test");
+					builder.setTitle("TEST");
+					builder.setNegativeButton(R.string.chat_send,new DialogInterface.OnClickListener() {
+
+
+						@Override
+						public void onClick(DialogInterface dialog, int which) {
+							// TODO Auto-generated method stub
+							
+						}
+					});
+					builder.setPositiveButton(R.string.chat_send, new DialogInterface.OnClickListener() {
+						
+						@Override
+						public void onClick(DialogInterface dialog, int which) {
+							// TODO Auto-generated method stub
+							
+						}
+					});
+					
+					builder.create().show();
 				} else {
 					MessageVO messageVO = new MessageVO(2, 1, DateHelper.getDate(), chat_message);
 				    chatAdapter.addItem(messageVO);

@@ -153,52 +153,61 @@ public final class R {
         public static final int friends_toast_letter_bg=0x7f02001a;
         public static final int home_btn_bg=0x7f02001b;
         public static final int ic_launcher=0x7f02001c;
-        public static final int icon_friends_nor=0x7f02001d;
-        public static final int icon_friends_pre=0x7f02001e;
-        public static final int icon_homepage_nor=0x7f02001f;
-        public static final int icon_homepage_pre=0x7f020020;
-        public static final int icon_message_nor=0x7f020021;
-        public static final int icon_message_pre=0x7f020022;
-        public static final int icon_search_nor=0x7f020023;
-        public static final int icon_search_pre=0x7f020024;
-        public static final int layout_bg1=0x7f020025;
-        public static final int listitem_bg=0x7f020026;
-        public static final int listitem_down=0x7f020027;
-        public static final int listitem_up=0x7f020028;
-        public static final int login_edit_normal=0x7f020029;
-        public static final int maintab_toolbar_bg=0x7f02002a;
-        public static final int message_listitem=0x7f02002b;
-        public static final int mm_listitem_grey_normal=0x7f02002c;
-        public static final int mm_listitem_normal=0x7f02002d;
-        public static final int mm_listitem_pressed=0x7f02002e;
-        public static final int mm_title_back_focused=0x7f02002f;
-        public static final int mm_title_back_normal=0x7f020030;
-        public static final int mm_title_back_pressed=0x7f020031;
-        public static final int mm_title_btn_contact_normal=0x7f020032;
-        public static final int mm_title_btn_focused=0x7f020033;
-        public static final int mm_title_btn_normal=0x7f020034;
-        public static final int mm_title_btn_pressed=0x7f020035;
-        public static final int selector_tab_background=0x7f020036;
-        public static final int tab_friends_btn=0x7f020037;
-        public static final int tab_homepage_btn=0x7f020038;
-        public static final int tab_message_btn=0x7f020039;
-        public static final int tab_search_btn=0x7f02003a;
-        public static final int tab_textcolor=0x7f02003b;
-        public static final int title_btn_back=0x7f02003c;
-        public static final int title_btn_right=0x7f02003d;
-        public static final int usericon=0x7f02003e;
-        public static final int voice_rcd_btn_nor=0x7f02003f;
-        public static final int voice_rcd_btn_pressed=0x7f020040;
+        public static final int ic_preference_first_normal=0x7f02001d;
+        public static final int ic_preference_first_pressed=0x7f02001e;
+        public static final int ic_preference_last_normal=0x7f02001f;
+        public static final int ic_preference_last_pressed=0x7f020020;
+        public static final int icon_friends_nor=0x7f020021;
+        public static final int icon_friends_pre=0x7f020022;
+        public static final int icon_homepage_nor=0x7f020023;
+        public static final int icon_homepage_pre=0x7f020024;
+        public static final int icon_message_nor=0x7f020025;
+        public static final int icon_message_pre=0x7f020026;
+        public static final int icon_search_nor=0x7f020027;
+        public static final int icon_search_pre=0x7f020028;
+        public static final int layout_bg1=0x7f020029;
+        public static final int listitem_bg=0x7f02002a;
+        public static final int listitem_down=0x7f02002b;
+        public static final int listitem_up=0x7f02002c;
+        public static final int login_edit_normal=0x7f02002d;
+        public static final int maintab_toolbar_bg=0x7f02002e;
+        public static final int message_listitem=0x7f02002f;
+        public static final int mm_listitem_grey_normal=0x7f020030;
+        public static final int mm_listitem_normal=0x7f020031;
+        public static final int mm_listitem_pressed=0x7f020032;
+        public static final int mm_submenu=0x7f020033;
+        public static final int mm_submenu_normal=0x7f020034;
+        public static final int mm_submenu_pressed=0x7f020035;
+        public static final int mm_title_back_focused=0x7f020036;
+        public static final int mm_title_back_normal=0x7f020037;
+        public static final int mm_title_back_pressed=0x7f020038;
+        public static final int mm_title_btn_contact_normal=0x7f020039;
+        public static final int mm_title_btn_focused=0x7f02003a;
+        public static final int mm_title_btn_normal=0x7f02003b;
+        public static final int mm_title_btn_pressed=0x7f02003c;
+        public static final int preference_first_item=0x7f02003d;
+        public static final int preference_last_item=0x7f02003e;
+        public static final int selector_tab_background=0x7f02003f;
+        public static final int tab_friends_btn=0x7f020040;
+        public static final int tab_homepage_btn=0x7f020041;
+        public static final int tab_message_btn=0x7f020042;
+        public static final int tab_search_btn=0x7f020043;
+        public static final int tab_textcolor=0x7f020044;
+        public static final int title_btn_back=0x7f020045;
+        public static final int title_btn_right=0x7f020046;
+        public static final int usericon=0x7f020047;
+        public static final int voice_rcd_btn_nor=0x7f020048;
+        public static final int voice_rcd_btn_pressed=0x7f020049;
     }
     public static final class id {
-        public static final int action_settings=0x7f09002f;
+        public static final int action_settings=0x7f090037;
         public static final int chat_bottom=0x7f090002;
         public static final int chat_content_textview=0x7f09000a;
         public static final int chat_head=0x7f090001;
         public static final int chat_icon_imageview=0x7f090009;
         public static final int chat_listview=0x7f090005;
         public static final int chat_name_textview=0x7f09000b;
-        public static final int chat_room_gridview=0x7f09001d;
+        public static final int chat_room_gridview=0x7f090025;
         public static final int chat_room_logo=0x7f090006;
         public static final int chat_room_name=0x7f090007;
         public static final int chat_send_btn=0x7f090003;
@@ -209,36 +218,44 @@ public final class R {
         public static final int dialog_content_textview=0x7f09000e;
         public static final int dialog_layout=0x7f09000c;
         public static final int dialog_title_textview=0x7f09000d;
-        public static final int friends_add=0x7f090013;
-        public static final int friends_alphabetscrollbar=0x7f090018;
-        public static final int friends_letter=0x7f090019;
-        public static final int friends_letter_notice=0x7f090016;
-        public static final int friends_list_content=0x7f09001c;
-        public static final int friends_list_imageview=0x7f09001a;
-        public static final int friends_list_name=0x7f09001b;
-        public static final int friends_listvew=0x7f090015;
-        public static final int friends_search_edit=0x7f090014;
-        public static final int friends_search_fail_textview=0x7f090017;
-        public static final int friends_top_layout=0x7f090011;
-        public static final int friends_top_textview=0x7f090012;
-        public static final int head_btn_back=0x7f090020;
-        public static final int head_btn_textview=0x7f090021;
-        public static final int head_ret_textview=0x7f090023;
-        public static final int head_right_btn=0x7f090022;
-        public static final int head_textView=0x7f09001e;
-        public static final int imageview=0x7f09002d;
-        public static final int message_icon_imageview=0x7f090025;
-        public static final int message_listview=0x7f090024;
-        public static final int message_message_textview=0x7f090028;
-        public static final int message_name_textview=0x7f090026;
-        public static final int message_time_textview=0x7f090027;
+        public static final int friend_info_content_textview=0x7f090014;
+        public static final int friend_info_first_interest=0x7f090015;
+        public static final int friend_info_icon_imageview=0x7f090011;
+        public static final int friend_info_id_textview=0x7f090013;
+        public static final int friend_info_more_interest=0x7f090017;
+        public static final int friend_info_name_textview=0x7f090012;
+        public static final int friend_info_second_interest=0x7f090016;
+        public static final int friend_info_send=0x7f090018;
+        public static final int friends_add=0x7f09001b;
+        public static final int friends_alphabetscrollbar=0x7f090020;
+        public static final int friends_letter=0x7f090021;
+        public static final int friends_letter_notice=0x7f09001e;
+        public static final int friends_list_content=0x7f090024;
+        public static final int friends_list_imageview=0x7f090022;
+        public static final int friends_list_name=0x7f090023;
+        public static final int friends_listvew=0x7f09001d;
+        public static final int friends_search_edit=0x7f09001c;
+        public static final int friends_search_fail_textview=0x7f09001f;
+        public static final int friends_top_layout=0x7f090019;
+        public static final int friends_top_textview=0x7f09001a;
+        public static final int head_btn_back=0x7f090028;
+        public static final int head_btn_textview=0x7f090029;
+        public static final int head_ret_textview=0x7f09002b;
+        public static final int head_right_btn=0x7f09002a;
+        public static final int head_textView=0x7f090026;
+        public static final int imageview=0x7f090035;
+        public static final int message_icon_imageview=0x7f09002d;
+        public static final int message_listview=0x7f09002c;
+        public static final int message_message_textview=0x7f090030;
+        public static final int message_name_textview=0x7f09002e;
+        public static final int message_time_textview=0x7f09002f;
         public static final int realtabcontent=0x7f090000;
-        public static final int rl_layout=0x7f09001f;
-        public static final int search_chatroom_btn=0x7f09002b;
-        public static final int search_heart_btn=0x7f090029;
-        public static final int search_questions_btn=0x7f09002c;
-        public static final int search_strategy_btn=0x7f09002a;
-        public static final int textview=0x7f09002e;
+        public static final int rl_layout=0x7f090027;
+        public static final int search_chatroom_btn=0x7f090033;
+        public static final int search_heart_btn=0x7f090031;
+        public static final int search_questions_btn=0x7f090034;
+        public static final int search_strategy_btn=0x7f090032;
+        public static final int textview=0x7f090036;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -246,17 +263,19 @@ public final class R {
         public static final int chat_room_item=0x7f030002;
         public static final int chatting_item_msg_text_left=0x7f030003;
         public static final int chatting_item_msg_text_right=0x7f030004;
-        public static final int exit_dialog=0x7f030005;
-        public static final int friends=0x7f030006;
-        public static final int friends_list_item=0x7f030007;
-        public static final int group_chat_room=0x7f030008;
-        public static final int head=0x7f030009;
-        public static final int head_btns=0x7f03000a;
-        public static final int head_ret=0x7f03000b;
-        public static final int message=0x7f03000c;
-        public static final int message_item=0x7f03000d;
-        public static final int search=0x7f03000e;
-        public static final int tab_item_view=0x7f03000f;
+        public static final int customer_confirm_dialog=0x7f030005;
+        public static final int exit_dialog=0x7f030006;
+        public static final int friend_info=0x7f030007;
+        public static final int friends=0x7f030008;
+        public static final int friends_list_item=0x7f030009;
+        public static final int group_chat_room=0x7f03000a;
+        public static final int head=0x7f03000b;
+        public static final int head_btns=0x7f03000c;
+        public static final int head_ret=0x7f03000d;
+        public static final int message=0x7f03000e;
+        public static final int message_item=0x7f03000f;
+        public static final int search=0x7f030010;
+        public static final int tab_item_view=0x7f030011;
     }
     public static final class menu {
         public static final int main=0x7f080000;
@@ -294,6 +313,18 @@ public final class R {
         public static final int chat_receiver_icon=0x7f060031;
         public static final int chat_send=0x7f06002f;
         public static final int chat_send_icon=0x7f060030;
+        /**  friend_info layout 
+         */
+        public static final int friend_info=0x7f060032;
+        public static final int friend_info_content=0x7f060036;
+        public static final int friend_info_first_interest=0x7f060039;
+        public static final int friend_info_icon=0x7f060033;
+        public static final int friend_info_id=0x7f060035;
+        public static final int friend_info_interests=0x7f060037;
+        public static final int friend_info_more_interest=0x7f06003b;
+        public static final int friend_info_name=0x7f060034;
+        public static final int friend_info_second_interest=0x7f06003a;
+        public static final int friend_info_send=0x7f060038;
         /**  friends_list_item layout 
          */
         public static final int friends_list_image=0x7f060024;
@@ -354,10 +385,17 @@ public final class R {
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f070001;
+        /**  自定义Dialog样式 
+         */
+        public static final int MyDialog=0x7f070007;
+        /**  聊天Item内容字体样式 
+         */
         public static final int chat_content_date_style=0x7f070005;
         /**  聊天页面Item的样式 
          */
         public static final int chat_text_date_style=0x7f070004;
+        /**  聊天Item姓名的字体样式 
+         */
         public static final int chat_text_name_style=0x7f070006;
         public static final int friendsListCatalog=0x7f070003;
         /**  联系分组样式 
